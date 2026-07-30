@@ -1,0 +1,52 @@
+{
+  "name": "n8n-nodes-reranker-voyageai",
+  "version": "1.0.0",
+  "description": "Voyage AI Reranker node for n8n",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "author": {
+    "name": "Jay Nguyen (Nguyễn Thiệu Toàn)",
+    "email": "me@nguyenthieutoan.com",
+    "url": "https://nguyenthieutoan.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyenthieutoan/n8n-nodes-reranker-voyageai.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "lint": "n8n-node lint",
+    "test": "jest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/VoyageApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/RerankerVoyageAi/RerankerVoyageAi.node.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "^1.0.0",
+    "@n8n/ai-utilities": "*"
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.23.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "gulp": "^4.0.2",
+    "jest": "^29.0.0",
+    "n8n-workflow": "^1.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}
