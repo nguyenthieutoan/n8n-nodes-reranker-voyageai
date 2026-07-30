@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-reranker-voyageai",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Voyage AI Reranker node for n8n",
   "keywords": [
     "n8n-community-node-package"
